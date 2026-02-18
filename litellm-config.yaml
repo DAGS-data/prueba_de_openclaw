@@ -1,0 +1,13 @@
+model_list:
+  - model_name: gpt-4o
+    litellm_params:
+      model: azure/gpt-4o                         # formato: azure/<deployment-name>
+      api_base: https://TU-RECURSO.openai.azure.com/  # endpoint del recurso Azure OpenAI
+      api_key: os.environ/AZURE_OPENAI_API_KEY
+      api_version: "2025-01-01-preview"
+
+litellm_settings:
+  drop_params: true
+
+general_settings:
+  master_key: "sk-litellm-master"
